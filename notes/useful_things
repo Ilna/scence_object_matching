@@ -1,0 +1,35 @@
+
+
+Hough Algorithm
+(https://en.wikipedia.org/wiki/Hough_transform)
+
+The Hough transform is a feature extraction technique used in image analysis, computer vision, and digital image processing.[1] The purpose of the technique is to find imperfect instances of objects within a certain class of shapes by a voting procedure. This voting procedure is carried out in a parameter space, from which object candidates are obtained as local maxima in a so-called accumulator space that is explicitly constructed by the algorithm for computing the Hough transform.
+
+The classical Hough transform was concerned with the identification of lines in the image, but later the Hough transform has been extended to identifying positions of arbitrary shapes, most commonly circles or ellipses. The Hough transform as it is universally used today was invented by Richard Duda and Peter Hart in 1972, who called it a "generalized Hough transform"[2] after the related 1962 patent of Paul Hough.[3][4] The transform was popularized in the computer vision community by Dana H. Ballard through a 1981 journal article titled "Generalizing the Hough transform to detect arbitrary shapes".  
+
+GC Algorithm
+(https://plumbr.io/handbook/garbage-collection-algorithms)
+
+Before diving into the practical implementation details of Garbage Collection algorithms it will be beneficial to define the required terminology and to understand the basic principles supporting the implementations. Specific details vary from collector to collector but in general all collectors focus in two areas
+
+    1)find out all objects that are still alive
+    2)get rid of everything else – the supposedly dead and unused objects.
+
+    
+Parameter Explanation
+
+descr_rad_  :
+the radius that defines the support on which the descriptor is computed (i.e. the subset of keypoint neighbors being described). It should be enough large to include at least a few tens of points, but not too large not to include clutter in the description of keypoints close to the object border. Usually a value between 10-20 cloud resolution does the job.
+
+rf_rad_: 
+the radius that defines the support on which to compute the local Reference Frame associated to each keypoint. Should be similar (as per order of magnitude) to the descriptor support
+
+cg_size_ : 
+Grouping parameter, that defines the spatial length of each Hough bin. Should be enough large to encompass oscillations due to noise of the 3D Hough votes but not too large to create spurious peaks in the Hough space. A few cloud resolution might be a reasonable value in most cases.
+
+cv_thresh_ : 
+The other grouping parameter, that thresholds the consensus (number of votes received) of each object hypothesis.
+
+Αυτός είναι ένας αλγόριθμος ομαδοποίησης βασισμένος σε ένα σχήμα ψηφοφορίας 3D Hough
+
+Αυτός είναι ένας αλγόριθμος ομαδοποίησης γεωμετρικής συνέπειας που επιβάλλει απλούς γεωμετρικούς περιορισμούς μεταξύ ζευγών αντιστοιχιών.

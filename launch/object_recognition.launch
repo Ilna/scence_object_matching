@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<launch>
+    <node pkg="scene_object_matching" type="scene_object_matching" respawn="false" name="scene_object_matching" output="screen">
+        <rosparam file="$(find scene_object_matching)/config/scene_object_matching.yaml" command="load" />
+    </node>
+</launch>

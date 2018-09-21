@@ -1,0 +1,12 @@
+ Data points foreach downsampled edition
+
+ ball_ds_001: PointCloud before filtering: 130560 data points (x y z rgba).PointCloud after filtering: 25120 data points (x y z rgba)
+ 
+ ball_ds_006: PointCloud before filtering: 130560 data points (x y z rgba).PointCloud after filtering: 1472 data points (x y z rgba)
+ 
+ ball_ds_007: PointCloud before filtering: 130560 data points (x y z rgba).PointCloud after filtering: 1000 data points (x y z rgba)
+ 
+ ball_ds_008: PointCloud before filtering: 130560 data points (x y z rgba).PointCloud after filtering: 872 data points (x y z rgba)
+ 
+ ball_ds_01: PointCloud before filtering: 130560 data points (x y z rgba).PointCloud after filtering: 536 data points (x y z rgba)
+ 

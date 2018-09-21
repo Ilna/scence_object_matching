@@ -1,0 +1,14 @@
+input_topic: "camera/depth_registered/points"
+
+model_filename: "ball_ds_008.pcd" # Relative to data folder
+
+show_keypoints: false
+show_correspondences: false
+use_cloud_resolution: false
+use_hough: false
+model_ss: 0.03
+scene_ss: 0.03
+rf_rad: 0.015
+descr_rad: 0.02
+cg_size: 0.01
+cg_thresh: 3.35
